@@ -1,0 +1,24 @@
+name: Run JAR on Schedule
+
+on:
+  schedule:
+    # 每天 UTC 时间 12:00 运行（北京时间 20:00）
+    - cron: '0 12 * * *'
+  # 可选：手动触发按钮
+  workflow_dispatch:
+
+jobs:
+  run-jar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '8'
+
+      - name: Run JAR
+        run: java -jar HifitiSign-1.0.20250730.jar
