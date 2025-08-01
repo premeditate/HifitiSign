@@ -4,10 +4,8 @@ on:
   schedule:
     # 每天 北京时间 01:15
     - cron: '15 1 * * *'
-	  timezone: 'Asia/Shanghai'
     # 每天 北京时间 13:15
     - cron: '15 13 * * *'
-	  timezone: 'Asia/Shanghai'
   # 可选：手动触发按钮
   workflow_dispatch:
 
