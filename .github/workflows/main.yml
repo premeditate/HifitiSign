@@ -2,8 +2,11 @@ name: Run JAR on Schedule
 
 on:
   schedule:
-    # 每天 UTC 时间 12:00 运行（北京时间 20:00）
-    - cron: '0 12 * * *'
+    # 每天 UTC 时间 17:15 运行（北京时间 01:15）
+    - cron: '15 17 * * *'
+    
+    # 每天 UTC 时间 05:15 运行（北京时间 13:15）
+    - cron: '15 5 * * *'
   # 可选：手动触发按钮
   workflow_dispatch:
 
