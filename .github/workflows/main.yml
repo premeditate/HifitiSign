@@ -1,4 +1,4 @@
-name: Run JAR on Schedule
+name: 运行jar的定时任务
 
 on:
   schedule:
@@ -23,5 +23,5 @@ jobs:
           distribution: 'temurin'
           java-version: '8'
 
-      - name: Hifiti Sign
+      - name: 音乐磁场签到
         run: java -jar HifitiSign-1.0.20250730.jar
