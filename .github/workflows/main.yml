@@ -21,4 +21,4 @@ jobs:
           java-version: '8'
 
       - name: 音乐磁场签到
-        run: java -jar HifitiSign-1.0.20250730.jar
+        run: java -jar HifitiSign-1.0.20250804.jar
