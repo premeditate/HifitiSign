@@ -9,7 +9,7 @@ on:
 
 jobs:
   Hifiti-Sign:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     env:
       JAVA_OPTS: "-Djava.net.preferIPv4Stack=true"  # 强制IPv4
     steps:
@@ -23,4 +23,4 @@ jobs:
           java-version: '8'
 
       - name: 音乐磁场签到
-        run: curl -v https://hifiti.com/
+        run: java -jar HifitiSign-1.0.20250818.jar "jxmh1991@163.com" "jin19910414"
