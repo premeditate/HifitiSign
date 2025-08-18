@@ -9,7 +9,7 @@ on:
 
 jobs:
   Hifiti-Sign:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     env:
       JAVA_OPTS: "-Djava.net.preferIPv4Stack=true"  # 强制IPv4
     steps:
