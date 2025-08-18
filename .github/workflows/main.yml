@@ -23,4 +23,4 @@ jobs:
           java-version: '8'
 
       - name: 音乐磁场签到
-        run: curl -v https://www.hifini.net
+        run: curl -v https://hifiti.com/
