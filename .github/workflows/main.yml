@@ -23,4 +23,4 @@ jobs:
           java-version: '8'
 
       - name: 音乐磁场签到
-        run: curl -v https://www.hifini.net
+        run: curl -v --http1.1 -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" https://www.hifini.net
