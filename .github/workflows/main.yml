@@ -26,4 +26,4 @@ jobs:
         run: | 
           curl -s ifconfig.me
           echo "Trying to access target site..."
-          curl -v https://www.hifini.net/
+          wget --user-agent="Mozilla/5.0" --header="Accept: text/html" --header="Referer: https://www.google.com/" -O - https://www.hifini.net/
