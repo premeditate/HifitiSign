@@ -10,16 +10,12 @@ on:
 jobs:
   Hifiti-Sign:
     runs-on: ubuntu-latest
-    
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '20'
-        cache: 'npm'
-        
     - name: 音乐磁场签到
       run: node hifiti_sign.js
