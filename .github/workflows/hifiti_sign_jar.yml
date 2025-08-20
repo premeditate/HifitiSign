@@ -1,4 +1,4 @@
-name: 运行jar的定时任务
+name: 定时运行签到hifiti.jar的定时任务
 
 on:
   schedule:
