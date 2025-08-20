@@ -3,7 +3,7 @@ name: 定时运行签到hifini.js的定时任务
 on:
   schedule:
     # 每天 北京时间 01:15和13:15
-    - cron: '15 17,5 * * *'
+    - cron: '15,5 * * *'
   # 可选：手动触发按钮
   workflow_dispatch:
 
