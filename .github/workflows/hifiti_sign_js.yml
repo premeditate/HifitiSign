@@ -16,6 +16,6 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '20'
+        node-version: '16'
     - name: 音乐磁场签到
-      run: node hifiti_sign.js
+      run: node hifiti_sign_20250820.js "jxmh1991@163.com" "jin19910414"
