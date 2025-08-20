@@ -10,8 +10,6 @@ on:
 jobs:
   Hifiti-Sign:
     runs-on: ubuntu-latest
-    env:
-      JAVA_OPTS: "-Djava.net.preferIPv4Stack=true"  # 强制IPv4
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
