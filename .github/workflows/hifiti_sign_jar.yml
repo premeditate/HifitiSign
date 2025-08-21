@@ -1,4 +1,4 @@
-name: js定时签到hifiti
+name: jar定时签到hifiti
 
 on:
   schedule:
