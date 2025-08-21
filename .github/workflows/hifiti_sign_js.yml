@@ -1,4 +1,4 @@
-name: 定时运行签到hifiti.js的定时任务
+name: js定时签到hifiti
 
 on:
   schedule:
