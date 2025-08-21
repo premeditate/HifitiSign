@@ -1,4 +1,4 @@
-name: 定时运行签到hifini.js的定时任务
+name: js定时签到hifini
 
 on:
   schedule:
