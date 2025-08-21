@@ -18,4 +18,4 @@ jobs:
       with:
         node-version: '16'
     - name: 音乐磁场签到
-      run: node hifini_sign_20250820.js "jxmh1991@163.com" "jin19910414"
+      run: node hifini_sign_20250821.js "jxmh1991@163.com" "jin19910414"
