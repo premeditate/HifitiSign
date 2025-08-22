@@ -20,27 +20,29 @@ jobs:
     - name: hifiti-js
       run: node hifiti_sign_20250821.js "jxmh1991@163.com" "jin19910414"
 
-  hifini-js:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '16'
-    - name: hifini-js
-      run: node hifini_sign_20250821.js "jxmh1991@163.com" "jin19910414"
+  # github服务器的IP被这个网站给禁了,不用操作了
+  # hifini-js:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: Checkout code
+  #     uses: actions/checkout@v4
+  #   - name: Setup Node.js
+  #     uses: actions/setup-node@v4
+  #     with:
+  #       node-version: '16'
+  #   - name: hifini-js
+  #     run: node hifini_sign_20250821.js "jxmh1991@163.com" "jin19910414"
 
-  hifiti-jar:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: Set up Java
-        uses: actions/setup-java@v3
-        with:
-          distribution: 'temurin'
-          java-version: '8'
-      - name: hifiti-jar
-        run: java -jar HifitiSign-1.0.20250819.jar "jxmh1991@163.com" "jin19910414"
+  # 使用js就不用jar了,感觉js更轻一些
+  # hifiti-jar:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v4
+  #     - name: Set up Java
+  #       uses: actions/setup-java@v3
+  #       with:
+  #         distribution: 'temurin'
+  #         java-version: '8'
+  #     - name: hifiti-jar
+  #       run: java -jar HifitiSign-1.0.20250819.jar "jxmh1991@163.com" "jin19910414"
