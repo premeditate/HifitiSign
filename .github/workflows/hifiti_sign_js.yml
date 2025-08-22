@@ -2,8 +2,8 @@ name: js定时签到hifiti
 
 on:
   schedule:
-    # 每天 北京时间 01:15和13:15
-    - cron: '15 5,17 * * *'
+    # 每天 北京时间 01:15
+    - cron: '15 17 * * *'
   # 可选：手动触发按钮
   workflow_dispatch:
 
